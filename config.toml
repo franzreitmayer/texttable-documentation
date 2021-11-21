@@ -1,0 +1,56 @@
+baseURL = "http://texttable.aws.reitmayer.eu"
+title = "TextTable"
+theme = "etch"
+languageCode = "en-US"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+dark = "on"
+
+[params]
+  description = "TextTable - SQL like text files"
+  copyright = "2021 Franz Reitmayer"
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "interface_def"
+    name = "Interface Definition"
+    title = "File interface definition"
+    url = "/page/interface_def/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "query_lang"
+    name = "Query Language"
+    title = "Query Language"
+    url = "/page/query/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "download"
+    name = "Download"
+    title = "Download"
+    url = "/page/download/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "ui"
+    name = "user interface"
+    title = "user interface"
+    url = "/page/ui/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "impressum"
+    name = "impressum"
+    title = "impressum"
+    url = "/page/impressum/"
+    weight = 20
+
+
+
+[markup.goldmark.renderer]
+  # Allows HTML in Markdown
+  unsafe = true

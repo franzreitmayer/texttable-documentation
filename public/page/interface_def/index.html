@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TextTable - SQL like text files">
+    
+    <link rel="shortcut icon" href="http://texttable.aws.reitmayer.eu/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>TextTable interface definition</title>
+</head>
+<body><header id="banner">
+    <h2><a href="http://texttable.aws.reitmayer.eu">TextTable</a></h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="/page/download/" title="Download">Download</a>
+            </li><li>
+                <a href="/page/impressum/" title="impressum">impressum</a>
+            </li><li>
+                <a href="/page/interface_def/" title="File interface definition">Interface Definition</a>
+            </li><li>
+                <a href="/page/query/" title="Query Language">Query Language</a>
+            </li><li>
+                <a href="/page/ui/" title="user interface">user interface</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>TextTable interface definition</h1>
+            <div></div>
+    </header><h2 id="quick-overview">Quick overview</h2>
+<p>Currently the file definition only allows plain fixed length files. Supporting separated files is an open topic at the moment. You start the definition with the keyword <strong>plain</strong> followed by an <strong>identifier</strong> for the file definition. That is follow the column specification which is enclosed between the keywords <strong>begin</strong> and <strong>end</strong>, where <strong>end</strong> is stopped by a <strong>; (Semicolon)</strong>. But let&rsquo;s have a look at a simple example.</p>
+<figure><img src="/images/interface_example01.png"
+         alt="Alt text" width="200px"/><figcaption>
+            <h4>Example 01</h4><p>interface definition</p>
+        </figcaption>
+</figure>
+
+<p>The option <strong>left</strong> or <strong>right</strong> from the example above (the field id) is used when the table is rendered back to the file. This way you can define whether the field is left or right aligned at the file.</p>
+<p>There are basically two different ways to define a column. You can do that eighter by defining a columns <strong>length</strong> or you can define where the column starts and ends in a single line with <strong>from</strong> and <strong>to</strong>. Using <strong>from</strong> and <strong>to</strong> there&rsquo;s no validation for gaps or intersections of the column definitions.</p>
+<p>please find the <a href="../TextTable.rrd.html">detailed language definition here</a>.</p>
+</article>
+
+        </main><footer id="footer">
+    2021 Franz Reitmayer
+</footer>
+</body>
+</html>
