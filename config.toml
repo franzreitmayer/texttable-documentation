@@ -49,6 +49,12 @@ dark = "on"
     url = "/page/impressum/"
     weight = 20
 
+  [[menu.main]]
+    identifier = "github"
+    name = "github"
+    title = "github"
+    url = "https://github.com/franzreitmayer/TextTable"
+    weight = 20
 
 
 [markup.goldmark.renderer]
